@@ -50,7 +50,7 @@ def readData(filename):
         reader = csv.DictReader(f)
         for row in reader:
             clean_row = [(k, preProcess(v)) for (k, v) in row.items()]
-            row_id = row['CLIENT_ID']
+            row_id = row['ID']
             data_d[row_id] = dict(clean_row)
 
     return data_d
@@ -79,8 +79,8 @@ if __name__ == '__main__':
 
     # ## Setup
 
-    input_file = 'PROSPECTS.csv'
-    output_file = 'prospect_output.csv'
+    input_file = 'carriers.csv'
+    output_file = 'carrier_output.csv'
     settings_file = 'csv_example_learned_settings'
     training_file = 'csv_example_training.json'
 
@@ -195,6 +195,6 @@ if __name__ == '__main__':
         writer.writeheader()
 
         for row in reader:
-            row_id = row['CLIENT_ID']
+            row_id = row['ID']
             row.update(cluster_membership[row_id])
             writer.writerow(row)
