@@ -98,32 +98,32 @@ if __name__ == '__main__':
         # Define the fields dedupe will pay attention to
         fields = [
             {'field': 'NAME', 'type': 'String'},
-            {'field': 'ADDRESS_1', 'type': 'String', 'has missing': True},
-            {'field': 'ADDRESS_2', 'type': 'String', 'has missing': True},
-            {'field': 'POSTAL_CODE', 'type': 'ShortString', 'has missing': True},
-            {'field': 'CITY', 'type': 'ShortString', 'has missing': True},
-            {'field': 'PROVINCE', 'type': 'Exact', 'has missing': True},
-            {'field': 'ALT_NAME', 'type': 'String'},
-            {'field': 'ALT_ADDRESS_1', 'type': 'String', 'has missing': True},
-            {'field': 'ALT_ADDRESS_2', 'type': 'String', 'has missing': True},
-            {'field': 'ALT_POSTAL_CODE', 'type': 'ShortString', 'has missing': True},
-            {'field': 'ALT_CITY', 'type': 'ShortString', 'has missing': True},
-            {'field': 'ALT_CITY_1', 'type': 'ShortString', 'has missing': True},
-            {'field': 'ALT_PROVINCE', 'type': 'Exact', 'has missing': True},
-            {'field': 'BUSINESS_PHONE', 'type': 'Exact', 'has missing': True},
-            {'field': 'FAX_PHONE', 'type': 'Exact', 'has missing': True},
-            {'field': 'ICCNUMBER', 'type': 'Exact', 'has missing': True},
-            {'field': 'W9', 'type': 'Exact', 'has missing': True},
-            {'field': 'FED_ID_NUM', 'type': 'Exact', 'has missing': True},
+            {'field': 'ADDRESS_1', 'type': 'String', 'Has Missing': True},
+            {'field': 'ADDRESS_2', 'type': 'String', 'Has Missing': True},
+            {'field': 'CITY', 'type': 'ShortString', 'Has Missing': True},
+            {'field': 'PROVINCE', 'type': 'Exact', 'Has Missing': True},
+            {'field': 'POSTAL_CODE', 'type': 'ShortString', 'Has Missing': True},
+            {'field': 'BUSINESS_PHONE', 'type': 'Exact', 'Has Missing': True},
+            {'field': 'FAX_PHONE', 'type': 'Exact', 'Has Missing': True},
+            {'field': 'W9', 'type': 'Exact', 'Has Missing': True},
+            {'field': 'ICC', 'type': 'Exact', 'Has Missing': True},
 
-            {'field': 'DUNS_ID', 'type': 'Exact', 'has missing': True},
-            {'field': 'SCAC_ID', 'type': 'Exact', 'has missing': True},
-            {'field': 'RMIS_MC_NUMBER', 'type': 'Exact', 'has missing': True},
-            {'field': 'RMIS_DOT_NUMBER', 'type': 'Exact', 'has missing': True},
-            {'field': 'BUSINESS_CELL', 'type': 'ShortString', 'has missing': True},
-
-            {'field': 'COMPANY_URL', 'type': 'ShortString', 'has missing': True},
-            {'field': 'EMAIL_NOTIFY', 'type': 'ShortString', 'has missing': True}
+            {'field': 'ALT_NAME', 'type': 'String', 'Has Missing': True},
+            {'field': 'ALT_ADDRESS_1', 'type': 'String', 'Has Missing': True},
+            {'field': 'ALT_ADDRESS_2', 'type': 'String', 'Has Missing': True},
+            {'field': 'ALT_CITY', 'type': 'ShortString', 'Has Missing': True},
+            {'field': 'ALT_PROVINCE', 'type': 'Exact', 'Has Missing': True},
+            {'field': 'ALT_POSTAL_CODE', 'type': 'ShortString', 'Has Missing': True},
+            
+            
+            
+            {'field': 'FED_ID_NUM', 'type': 'Exact', 'Has Missing': True},
+            {'field': 'EMAIL_NOTIFY', 'type': 'ShortString', 'Has Missing': True},
+            {'field': 'SCAC_ID', 'type': 'Exact', 'Has Missing': True},
+            {'field': 'RMIS_MC_NUMBER', 'type': 'Exact', 'Has Missing': True},
+            {'field': 'RMIS_DOT_NUMBER', 'type': 'Exact', 'Has Missing': True},
+            {'field': 'BUSINESS_CELL', 'type': 'ShortString', 'Has Missing': True}
+            
             ]
 
         # Create a new deduper object and pass our data model to it.
