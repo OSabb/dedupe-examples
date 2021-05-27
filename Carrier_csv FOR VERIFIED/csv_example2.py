@@ -80,8 +80,8 @@ if __name__ == '__main__':
 
     # ## Setup
 
-    input_file = 'carriers3.csv'
-    output_file = 'ShipperReceiver_output.csv'
+    input_file = 'carriers7.csv'
+    output_file = 'ShipperReceiver_output7.csv'
     settings_file = 'csv_example_learned_settings'
     training_file = 'csv_example_training.json'
 
